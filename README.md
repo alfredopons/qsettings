@@ -1,9 +1,5 @@
 # qsettings
-qsettings from shell scripts. Easy parse config.
-
-## Example
-
-
+qsettings QT5 from shell scripts. Easy parse ini config files.
 
 ## Installation
 
@@ -13,6 +9,58 @@ qsettings from shell scripts. Easy parse config.
     make
     sudo cp qsettings /usr/local/bin/
 
+
+## Example
+
+My config file:
+
+    active=true
+    device=/dev/tty2
+    type=460
+    
+    [lcd_screen]
+    active=true
+    address=39
+    device=/dec/screen
+    type=440
+    
+    [machine]
+    barcode_pay=false
+    free_pay=false
+    nfc_pay=true
+    nfc_pin_login_only_numeric=false
+    nfc_pin_password_only_numeric=true
+    nfc_pin_pay=true
+    taxes=true
+    type=0
+    
+    [nfc]
+    active=true
+    device=/dev/input/by-id/usb-13ba_Barcode_Reader-event-kbd
+    type=600
+    
+    [printer]
+    active=false
+    device=auto
+    type=200
+    
+    [theme]
+    style=Material
+    
+    [tpv]
+    active=false
+    bus=0
+    device=/dev/serial/by-id/usb-INGENICO_Ingenico_iUC285-if00
+    type=800
+    
+    
+Type:
+    
+    cd qsettings/test
+    qsettings -k nfc/device example.conf
+    
+
+![Demo of config qsetting #1](test.png)
 
 
 ## License
