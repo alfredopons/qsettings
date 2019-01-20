@@ -7,6 +7,13 @@ qsettings from shell scripts. Easy parse config.
 
 ## Installation
 
+    git clone https://github.com/alfredopons/qsettings.git
+    cd qsettings
+    qmake
+    make
+    sudo cp qsettings /usr/local/bin/
+
+
 
 ## License
 
