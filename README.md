@@ -1,7 +1,6 @@
 # qsettings
 qsettings QT5 from shell scripts. Easy parse ini config files.
 
-[![paypal]](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CDMXMU4CY39BN)
   
 ## Installation
 
