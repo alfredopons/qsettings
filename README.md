@@ -17,10 +17,13 @@ qsettings QT5 from shell scripts. Easy parse ini config files.
     qsettings for shell scripts. Easy parse for INI files.
     
     Options:
-      -h, --help                 Displays this help.
-      -v, --version              Displays version information.
-      -k, --key <machine/taxes>  Specify the key to search
-      -n, --no-newline           do not output the trailing newline
+      -h, --help                         Displays this help.
+      -v, --version                      Displays version information.
+      -k, --key <machine/taxes>          Specify the key to search
+      -j, --vector-key <vector key>      Specify the key vector to searh
+      -i, --vector-index <vector index>  Specify the index in vector to searh
+      -s, --vector-size                  Get size vector
+      -n, --no-newline                   do not output the trailing newline
     
     Arguments:
       filename                   Config INI file (qsettings format).
